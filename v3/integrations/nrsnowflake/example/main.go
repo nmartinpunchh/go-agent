@@ -25,7 +25,8 @@ func main() {
 		panic(err)
 	}
 
-	app, err := newrelic.NewApplication(newrelic.ConfigAppName("Snowflake app"), newrelic.ConfigLicense(mustGetEnv("NEW_RELIC_LICENSE_KEY")), newrelic.NewDebugLogger(os.Stdout))
+	app, err := newrelic.NewApplication(newrelic.ConfigAppName("Snowflake app"), newrelic.ConfigLicense(mustGetEnv("NEW_RELIC_LICENSE_KEY")), newrelic.ConfigLogger(newrelic.NewDebugLogger(os.Stdout)))
+
 	if err != nil {
 		log.Fatal(err)
 	}
