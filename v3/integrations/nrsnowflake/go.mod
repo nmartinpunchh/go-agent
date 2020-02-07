@@ -13,3 +13,7 @@ require (
 	github.com/snowflakedb/gosnowflake v1.3.4
 	golang.org/x/crypto v0.0.0-20200206161412-a0c6ece9d31a // indirect
 )
+
+replace github.com/newrelic/go-agent/v3 => ../../../
+
+replace github.com/newrelic/go-agent/v3/integrations/nrnats => ../
