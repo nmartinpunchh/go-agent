@@ -14,6 +14,6 @@ replace github.com/newrelic/go-agent/v3 => ../../
 
 replace github.com/newrelic/go-agent/v3/integrations/nrsnowflake => ./
 
-replace github.com/newrelic/go-agent/v3/internal => ../../
+replace github.com/newrelic/go-agent/v3/internal => ../../internal
 
-replace github.com/newrelic/go-agent/v3/internal/sqlparse => ../../
+replace github.com/newrelic/go-agent/v3/internal/sqlparse => ../../internal/sqlparse
